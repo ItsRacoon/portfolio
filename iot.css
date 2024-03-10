@@ -1,0 +1,54 @@
+.pic>img
+{
+    height: 300px;
+    width: 300px;
+    border-radius: 40px;
+
+}
+.pic
+{
+    height: 350px;
+    width: 350px;
+    background-color: rgb(150, 150, 150,0.5);
+    backdrop-filter: blur(5px);
+    border-radius: 40px;
+   
+    display: grid;
+    place-items: center;
+}
+
+body
+{
+
+    display: flex;
+    justify-content: space-around ;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-image: url(Img/iotbc.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    
+}
+.content
+{
+    background-color: rgb(150, 150, 150,0.5);
+    backdrop-filter: blur(5px);
+    border-radius: 14px;
+    height: 650px;
+    width: 1000px;
+    margin-top: 20px;
+    text-align: center;
+    
+
+
+}
+.content>h1
+{
+    font-size: 60px;
+}
+.content>p
+{
+    font-size: 25px;
+    padding: 40px;
+    text-align: justify;
+}
