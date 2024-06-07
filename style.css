@@ -28,14 +28,11 @@ section
     flex-wrap: wrap;
     margin: 20px;
 }
-section>p{
-    width: 920px;
-   
-}
+
 .lang{
    height: 100px;
    width: 100px;
-  
+   transition: transform 0.3s, box-shadow 0.3s;
   margin: 10px;
   background-color: rgb(150, 150, 150,0.5) ;
   backdrop-filter: blur(5px);
@@ -48,23 +45,124 @@ section>p{
     padding-left: 5px;
     padding-top: 5px;
 }
-.project
-{
-   height: 200px;
-   width: 200px;
-   border: 0px solid black;
-   background-color: whitesmoke;
-   margin: 10px;
-   display: inline-block;
-   border-radius: 15px;
+.lang:hover{
+    transform: scale(1.3);
+    box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
 
 }
-.project>a>img{
-    height: 200px;
-    width: 200px;
+.card {
+    transition: transform 0.3s, box-shadow 0.3s;
     border-radius: 15px;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    height: 280px;
+    width: 220px;
+    background-color: rgb(150, 150, 150,0.5);
+    display: inline-block;
+    margin: 10px;
+   
+  }
   
+  .card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
+  }
+
+  
+  .card-image {
+   margin-top:18px;
+    /* background: linear-gradient(to bottom right, #ffe4e6, #c084fc, #c084fc); */
+ 
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+    height: 60%;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .card-content {
+    margin-top: -35px;
+    padding: 0 1.25rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card-title>h2 {
+    font-weight: 600;
+    color: #000;
+  }
+  
+  .card-button {
+    background-color: #3b82f6;
+    cursor: pointer;
+    color: #fff;
+    padding: 8px ;
+    font-size: 16px;
+    
+    margin-top: 0.5rem;
+    border-radius: 12px;
+    transition: background-color 0.15s;
+    border: none;
+    margin-top: -10px;
+  }
+  
+  .card-button:hover {
+    background-color: #1d4ed8;
+  }
+  
+  
+.companylogo>img{
+    height: 82px;
+    border-radius: 5px;
 }
+
+
+.companylogo {
+    flex: 0 0 auto;
+   
+  }
+
+.companyinfo{
+    margin-left: 20px;
+    
+}
+.companyinfo>p{
+    font-size: 13px;
+    margin-bottom: -8px;
+}
+.companyinfo>h3{
+    margin-top: -10px;
+}
+h4{
+    font-size: 15px;
+    margin-bottom: -8px;
+    margin-top: -12px;
+}
+#experience {
+    padding: 20px;
+   
+  }
+  .work{
+    background-color: rgb(150, 150, 150,0.5) ;
+    padding: 15px;
+    border-radius: 15px;
+  }
+.workinfo{
+    display: flex;
+  align-items: center;
+}
+.workskills {
+    display: flex;
+    align-items: center;
+    margin-top: -15px;
+  }
+  
+  .workskills h3 {
+    margin-right: 10px; 
+  }
+ 
+  
 html{
     height: 100%;
 }
@@ -86,19 +184,132 @@ footer
    
     
 }
-.foot>p>a>img
-{
-    height: 20px;
-    width: 20px;
-    al
-   
-
-}
-.footer >p > a {
+ul {
+    list-style: none;
+  }
+  
+  .example-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .example-2 .icon-content {
+    margin: 0 10px;
+    position: relative;
+  }
+  .example-2 .icon-content .tooltip {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 5px;
+    opacity: 0;
+    visibility: hidden;
+    font-size: 14px;
+    transition: all 0.3s ease;
+  }
+  .example-2 .icon-content:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+    top: -50px;
+  }
+  .example-2 .icon-content a {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    color: #4d4d4d;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+  }
+  .example-2 .icon-content a:hover {
+    box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%);
+  }
+  .example-2 .icon-content a svg {
+    position: relative;
+    z-index: 1;
+    width: 23px;
+    height: 23px;
+  }
+  .example-2 .icon-content a:hover {
+    color: white;
+  }
+  .example-2 .icon-content a .filled {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #000;
+    transition: all 0.3s ease-in-out;
+  }
+  .example-2 .icon-content a:hover .filled {
+    height: 100%;
+  }
+  
+  .example-2 .icon-content a[data-social="linkedin"] .filled,
+  .example-2 .icon-content a[data-social="linkedin"] ~ .tooltip {
+    background-color: #0274b3;
+  }
+  
+  .example-2 .icon-content a[data-social="github"] .filled,
+  .example-2 .icon-content a[data-social="github"] ~ .tooltip {
+    background-color: #24262a;
+  }
+  .example-2 .icon-content a[data-social="instagram"] .filled,
+  .example-2 .icon-content a[data-social="instagram"] ~ .tooltip {
+    background: linear-gradient(
+      45deg,
+      #405de6,
+      #5b51db,
+      #b33ab4,
+      #c135b4,
+      #e1306c,
+      #fd1f1f
+    );
+  }
+  .example-2 .icon-content a[data-social="email"] .filled,
+  .example-2 .icon-content a[data-social="email"] ~ .tooltip {
+    background-color: #ea4335;
+  }
+.footer >p > a
+ {
     text-decoration: none;
+   
 }
 
 a:link
 {
     text-decoration: none!important;
+    color: white;
+}
+
+@media screen and (max-width: 600px )
+{
+    section>p{
+       width: 100%;
+        text-align: justify ;
+        font-size: 15px;
+       
+    }
+    .lang{
+
+       
+  display: inline-block;
+}
+   
+
+
+
+
+
+
+
 }
